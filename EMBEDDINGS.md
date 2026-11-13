@@ -153,6 +153,8 @@ envs:
   VOYAGE_API_KEY: your-api-key-here
 ```
 
+Any [Voyage text embedding model](https://docs.voyageai.com/docs/embeddings) works with the `voyage/` prefix: `voyage-code-4`, `voyage-4-large`, `voyage-4`, `voyage-4-lite`, `voyage-code-3`, `voyage-3-large`, `voyage-3.5`, `voyage-3.5-lite`, `voyage-finance-2` and `voyage-law-2`. `ccc init` sets `input_type: document` for indexing and `input_type: query` for search. Embeddings use each model's default size (1024 dimensions); the output dimension is not configurable (see [`indexing_params` / `query_params`](README.md#indexing_params--query_params)).
+
 For more information, see the [LiteLLM Providers Documentation](https://docs.litellm.ai/docs/providers).
 
 [Back to top](#table-of-contents)
